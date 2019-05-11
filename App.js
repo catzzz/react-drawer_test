@@ -8,16 +8,15 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import SettingsScreen from './screens/SettingsScreen.js'
-import HomeScreen from './screens/HomeScreen.js'
-import LinksScreen from './screens/LinksScreen.js'
+
+import DrawerNavigator from './navigation/DrawerNavigator.js'
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <LinksScreen/>
+        <DrawerNavigator/>
       </View>
     );
   }
@@ -26,8 +25,6 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
 });
