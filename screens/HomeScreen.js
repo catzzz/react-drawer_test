@@ -9,7 +9,7 @@ export default class HomeScreen extends Component<Props> {
   render() {
     return (
       <View style={styles.HomeScreen}>
-        <MenuButton/>
+        <MenuButton navigation={this.props.navigation}/>
         <Text>HomeScreen!</Text>
       </View>
     );

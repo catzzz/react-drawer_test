@@ -13,7 +13,7 @@ export default class MenuButton extends Component<Props> {
 				color ="#000000"
 				size ={32}
 				style = {styles.menuIcon}
-				onPress ={()=>{}}
+				onPress ={()=>this.props.navigation.toggleDrawer()}
 
 			/>
 
