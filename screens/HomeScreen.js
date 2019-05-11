@@ -1,12 +1,15 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import MenuButton from '../components/MenuButton.js'
+
 
 type Props = {};
 export default class HomeScreen extends Component<Props> {
   render() {
     return (
       <View style={styles.HomeScreen}>
+        <MenuButton/>
         <Text>HomeScreen!</Text>
       </View>
     );
